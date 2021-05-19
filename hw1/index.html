@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Game Loop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="card">
+    <div class="card-header text-center">
+      <h4 class="card-title">Game Loop</h4>
+    </div>
+    <div class="card-body flexRow">
+      <div id='eventList'>
+        <h5 class="card-title text-center m-2">Events</h5>
+        <hr>
+        <div id='liveEvents'>
+        </div>
+      </div>
+      <div id='controlsList'>
+        <h5 class="card-title">Enter your Events!</h5>
+        <div class="form-group">
+          <label for="eventName">Name:</label>
+          <input type="text" class="form-control" id="eventName" placeholder="Enter event name">
+        </div>
+        <div class="form-group">
+          <label for="eventInterval">Interval:</label>
+          <input type="text" class="form-control" id="eventInterval">
+        </div>
+        <div class="form-group">
+          <label for="eventTimes"># Times:</label>
+          <input type="text" class="form-control" id="eventTimes">
+        </div>
+        <button onclick="addEvent()" class="btn btn-primary">Add Event</button>
+      </div>
+    </div>
+    <div class="card-footer text-muted text-center">
+      CS 5410 HW 1
+    </div>
+  </div>
+  <script defer src="main.js"></script>
+</body>
+
+</html>
